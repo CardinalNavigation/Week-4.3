@@ -2,7 +2,7 @@ console.log('***** Cart Functions *****');
 // Make sure to test all functions here in the JS file!
 // We want to see how you are testing your code!!!
 
-
+let basket = []
 
 
 
@@ -25,6 +25,6 @@ try {
         isFull: typeof isFull !== 'undefined' ? isFull : undefined,
         removeItem: typeof removeItem !== 'undefined' ? removeItem : undefined,
     };
-} catch(e) {
+} catch (e) {
     // Do nothing
 }
