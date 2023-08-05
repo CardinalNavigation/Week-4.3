@@ -16,12 +16,17 @@ function addItem(item) {
 addItem("kale");
 console.log(basket)
 
+
 //creating function to list items in the basket, needs to be a loop
 
 function listItems() {
+    for (let x of basket) {
+        console.log([x]);
+    }
 
 }
 
+console.log(listItems());
 
 
 // DO NOT MODIFY
