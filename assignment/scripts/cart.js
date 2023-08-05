@@ -2,13 +2,19 @@ console.log('***** Cart Functions *****');
 // Make sure to test all functions here in the JS file!
 // We want to see how you are testing your code!!!
 
+//adding global max items const of 5 so that our basket has a limit
+
+const maxItems = 5;
+console.log(maxItems)
+
 // this is our container
 let basket = []
 
 // this function will allow us to push an item into the array by using addItem(""
+// Stretch: We are adjusting this item so that the isFull function is run if items are greater or equal to 5
+// 
 
 function addItem(item) {
-    if (isFull())
     basket.push(item)
     return true;
 }
@@ -44,15 +50,12 @@ function empty() {
 console.log(empty());
 console.log(basket);
 
-//adding global const of 5
-
-const maxItems = 5;
 
 // creating function isFull, to check if the cart is full. It states that if the basket is < 5 items then to return false boolean
 // it returns a true boolean if the basket has more than 5 items. The console log below shows that the process is runnign correctly.
 
 function isFull() {
-    if (basket < maxItems) {
+    if (basket <= maxItems) {
         return false;
     }
     return true;
