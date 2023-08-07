@@ -15,10 +15,8 @@ let basket = []
 // 
 
 function addItem(item) {
-    if (isFull() === false) {
-        basket.push(item)
-        return true;
-    }
+    basket.push(item)
+    return true;
 }
 
 // attempting to add item Kale per the instructions and console log to confirm results
